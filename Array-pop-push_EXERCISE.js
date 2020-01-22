@@ -86,7 +86,7 @@ console.log(stringToarr);
 //This is array was string
 //----------------------------------------------
 
-//TEACHER SOLUTION--------------------------------------------------
+
 
 /*-------------------2EXERCISE--------------------------------------------
 //1_
@@ -112,7 +112,10 @@ console.log(
 
 /*---------------------------------------------------------------
 //2__
-// Hello Frien Create an array filled with your friends’ and family’s names. Loop over the array and greet each friend e.g. Hello Maria! Hello Mike! etc. Bonus: Print the indexes of each item in the array. Expected output example: Mike is at index 1 of my friends array.
+// Hello Frien Create an array filled with your friends’ and family’s names. 
+//Loop over the array and greet each friend e.g. Hello Maria! Hello Mike! etc. 
+//Bonus: Print the indexes of each item in the array. Expected output example: 
+//Mike is at index 1 of my friends array.
 const names2 = ["Hadi", "Ali", "Olga", "Nancy"];
 for (let i = 0; i < names2.length; i++) {
   console.log(`Hello ${names2[i]}, and he is index ${i} of Names array`);
@@ -170,7 +173,7 @@ for (let i = 0; i < cityNames.length; i++) {
   if (i == cityNames.length - 1) {
     //the -1 means it will start from cero
     cityNamesStr += ".";
-    //esto de arriba significa, only if you reach the last caracter add a 'dot'
+    //means, only if you reach the last caracter add a 'dot'
   } else {
     //if it dont reach the last character add a coma, this is why you have comas in between
     cityNamesStr += ", ";
@@ -275,7 +278,7 @@ elemnent in this case 2
 
 
 You can assign a value to an index that doesnt exist
-so if we added a variable with the following value:
+so if i added a variable with the following value:
 
 ages.length = 101 //incrementation
 ages[100] = "Hey" //variable
@@ -286,16 +289,6 @@ than the highest INDEX in this case ages[100]
 
 
 
-MULTIDIMENTIONAL ARRAYS
-
-
-
-
-
-
-*/
-
-/*
 //USING ARRAYS
 let grades = [12, 43, 432];
 console.log([]);
@@ -308,7 +301,7 @@ when you use arrays inside the
   inside the array
   
   for example , if i want to grab the 
-  second elemnet i put 1:
+  second element i should add 1:
 let grades = [22, 43, 432];
 console.log([1]);
 

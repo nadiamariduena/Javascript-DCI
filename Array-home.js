@@ -11,7 +11,7 @@ console.log(grades);
 
 LOOK AT the space between the 40 and the 2, in the
 console it indicates you have 38 empty spaces, and that
-is because you are putting a big number inside the index
+is because you are adding a big number inside the index
 that breaks the order from 0 1 ...etc
 
 compare:

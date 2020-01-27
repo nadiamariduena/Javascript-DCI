@@ -252,3 +252,24 @@ console.log(palmera || givenName || firstName || "Abc");
 //if i changed palmera for firstName?
 
 ----------------------------------------------------------*/
+
+//01234 01234 01234
+/*
+let counter = 0;
+for (let i = 0; i <= 4; ) {
+  console.log(i);
+  if (i == 4 && counter < 2) {
+    //if my i was equal to 4 and my counter less than 2...
+    i = 0;
+    //...IF SO, do 'i' one more time cero
+    counter++;
+    //then increase the counter by 1
+  } else {
+    //if the condition on top wasnt truthy, loop again
+    i++;
+  }
+}
+//result
+
+01234 01234 01234
+*/

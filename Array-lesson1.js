@@ -1,42 +1,59 @@
-let arrStr = ["hi", "hahaha", "text"];
+//first way
+let arrStr = ["Hi", "Hello", "Bonjour"];
 console.log(arrStr);
+//result:   [ 'Hi', 'Hello', 'Bonjour' ]
 
-//TO CREATE Array with num slots
-arrInt = [];
-console.log(arrInt);
-arrInt[0] = 22;
+//-----------
+//second Way
+let arrInt; //1_ I CREATE a variable
+arrInt = []; //2_  INITIALIZE that variable
+console.log(arrInt); //just to check what this does before the 3th step
+//result : []
+arrInt[0] = 22; //_3 I ASSIGN  a value
+//Here i am assigning 22 to the very first element of the array, in this case [0].
+//I CAN REPEAT it multiple times but changing the inxed of the elemnts
 arrInt[1] = 22;
+//Here i am assigning 22 to the second element of the array, in this case [1].
 console.log(arrInt);
+//result: [ 22, 22 ]
 
-//---another methode
+//3 Methode-------ARRAY with num slots/espacios--------
 
 let arrString = new Array();
-let arrStr2 = Array("Hadi", "Ali");
+let arrStr2 = Array("Hadi", "haaa");
 console.log(arrStr2);
+//result:  [ 'Hadi', 'haaa' ]
 
-//last way-----------
-//Array.of() creating array
-let strArr = Array.of(3);
+//4 Methode-------Array.Of()
+let strArr = Array.of(3); //Here i initialize the array with 3slots/espacios, for now they are empty
 console.log(strArr);
-
-//---I will assign a value to this array,
-// this INT is ont top 'empty
+//result [ 3 ]
 arrInt[2] = 33;
 arrInt[3] = 53;
-console.log(arrInt);
+//console.log(arrInt);
 
-//---plusieurs
-arrInt.push(663);
-arrInt.push(222);
+/*RESULT
+[ 22, 22, 33, 53 ]
 
-//--
+If you check all the arrInt from the top with the position of 
+arrInt[0] = 22; and arrInt[1] = 22; ,they will all appear in one single array 
+and that is because they have all the same name, so [ 22, 22, 33, 53 ] correspond to
+these arrays together.
 
-arrInt.unshift(322);
+*/
+
+arrInt.push(526); //526 will be added to the array
+//result:  [ 22, 22, 33, 53, 526 ]
+arrInt.push("hello"); //push will add the data ("hello"); at the end of the array
+arrInt.unshift("5982"); //unshift will add the data ("5982") at the beginning of the array
+//result  [ '5982', 22, 22, 33, 53, 526, 'hello' ]
 console.log(arrInt);
 console.log(typeof arrInt);
 
+//Finding items:
+//Array.indexOf(<items>)
 //---
-
+//-------------------------------------------------------______-1
 var firstNameArr = ["Ali", "Olga", "Hadi"];
 console.log(firstNameArr.indexOf("Nancy"));
 //Everytime you will look for a number or name that isnt inside
@@ -141,3 +158,27 @@ console.log(stringToArray);
 
 
 */
+var firstNameArr = ["Alo", "Olga", "Hadi"];
+console.log(firstNameArr.indexOf("Olga"));
+//RESULT: -1 , That is because Nancy dont exist inside the array
+//EVERYTIME there is a -1 , it means nonexistent
+//if i added .indexOf("Olga")); for example
+//the result will be 1, because olga is position 1 in the index
+/*----------------------------------------------
+let funArr = ["😎", "💪🏻", "😊"];
+console.log(funArr);
+let arrStingName = [];
+for (let i = 0; i < 10; i++) {
+  arrStingName[i] = `Halloha ${i}`;
+  //arr[1] = "BELAB 1";
+}
+console.log(arrStingName);
+//result
+[
+  'Halloha 0', 'Halloha 1',
+  'Halloha 2', 'Halloha 3',
+  'Halloha 4', 'Halloha 5',
+  'Halloha 6', 'Halloha 7',
+  'Halloha 8', 'Halloha 9'
+]
+------------POP----SHIFT------UNSHIFT----------------------------*/

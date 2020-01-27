@@ -43,6 +43,56 @@ console.log(sum(2, 3));
 
 example:
 
+/*
+//-------------EXERCISES--------------------------
+//1Create a function that multiples a number
+// by another number.
+//multiplication
+function calc(mult1, mult2) {
+  let multextra = mult1 * mult2;
+  return multextra;
+}
+
+console.log(calc(5, 4));
+//--------------------------------------
+
+//--------------------------------------
+//2 Multiply - Function Declarations as Values
+//Rework the syntax of the above function so
+//that the function declaration is stored as a value.
+
+const Sum = function(mult1, mult2) {
+  let multextra = mult1 * mult2;
+  return multextra;
+};
+
+console.log(Sum(2, 2));
+//-----------------------------------
+//3. Multiply - Arrow Function
+//Rework the syntax of the function declaration
+//so that is uses the arrow function shorthand.
+
+const Soma = (mult1, mult2) => {
+  let multextra = mult1 * mult2;
+  return multextra; //this doesnt matter if it has the same name
+  //because after all its in between the brackets and dont destroy
+  //the settings of the other functions, but just in this example.
+};
+console.log(Soma(5, 10));
+
+RESULT of all the three
+
+20
+4
+50
+
+
+*/
+
+
+
+
+
 function fum(){
 
 const num = 10;

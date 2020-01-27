@@ -1,3 +1,57 @@
+//------------POP----SHIFT------UNSHIFT---------------------------
+
+//Removing items
+//Array.pop()    // Removing the lastItem
+//Array.shift()  // Removing the firstItem
+//Array.Unshift()   //Adding  the firstItem
+
+/*
+
+let funArr = ["😎", "💪🏻", "😊"];
+funArr.pop();
+funArr.shift(); //you have to take this away to see what the unshift does, of course 
+//after having use the .pop and .shift!!
+funArr.unshift();
+
+console.log(funArr);
+
+*/
+
+let funArr = ["😎", "💪🏻", "😊"];
+console.log(funArr);
+let arrStingName = [];
+for (let i = 0; i < 10; i++) {
+  arrStingName[i] = `Halloha ${i}`;
+  //arr[1] = "BELAB 1";
+}
+console.log(arrStingName);
+//result
+[
+  "Halloha 0",
+  "Halloha 1",
+  "Halloha 2",
+  "Halloha 3",
+  "Halloha 4",
+  "Halloha 5",
+  "Halloha 6",
+  "Halloha 7",
+  "Halloha 8",
+  "Halloha 9"
+];
+
+//-------------------------------------------
+
+arrInt.push(526); //526 will be added to the array
+//result:  [ 22, 22, 33, 53, 526 ]
+arrInt.push("hello"); //push will add the data ("hello"); at the end of the array
+arrInt.unshift("5982"); //unshift will add the data ("5982") at the beginning of the array
+//result  [ '5982', 22, 22, 33, 53, 526, 'hello' ]
+console.log(arrInt);
+console.log(typeof arrInt);
+
+//Finding items:
+//Array.indexOf(<items>)
+
 //--------------EXERCISES----------------
 
 /*
@@ -86,7 +140,7 @@ console.log(stringToarr);
 //This is array was string
 //----------------------------------------------
 
-
+//TEACHER SOLUTION--------------------------------------------------
 
 /*-------------------2EXERCISE--------------------------------------------
 //1_
@@ -112,10 +166,7 @@ console.log(
 
 /*---------------------------------------------------------------
 //2__
-// Hello Frien Create an array filled with your friends’ and family’s names. 
-//Loop over the array and greet each friend e.g. Hello Maria! Hello Mike! etc. 
-//Bonus: Print the indexes of each item in the array. Expected output example: 
-//Mike is at index 1 of my friends array.
+// Hello Frien Create an array filled with your friends’ and family’s names. Loop over the array and greet each friend e.g. Hello Maria! Hello Mike! etc. Bonus: Print the indexes of each item in the array. Expected output example: Mike is at index 1 of my friends array.
 const names2 = ["Hadi", "Ali", "Olga", "Nancy"];
 for (let i = 0; i < names2.length; i++) {
   console.log(`Hello ${names2[i]}, and he is index ${i} of Names array`);
@@ -173,7 +224,7 @@ for (let i = 0; i < cityNames.length; i++) {
   if (i == cityNames.length - 1) {
     //the -1 means it will start from cero
     cityNamesStr += ".";
-    //means, only if you reach the last caracter add a 'dot'
+    //esto de arriba significa, only if you reach the last caracter add a 'dot'
   } else {
     //if it dont reach the last character add a coma, this is why you have comas in between
     cityNamesStr += ", ";
@@ -278,7 +329,7 @@ elemnent in this case 2
 
 
 You can assign a value to an index that doesnt exist
-so if i added a variable with the following value:
+so if we added a variable with the following value:
 
 ages.length = 101 //incrementation
 ages[100] = "Hey" //variable
@@ -289,6 +340,12 @@ than the highest INDEX in this case ages[100]
 
 
 
+MULTIDIMENTIONAL ARRAYS
+
+
+*/
+
+/*
 //USING ARRAYS
 let grades = [12, 43, 432];
 console.log([]);
@@ -301,7 +358,7 @@ when you use arrays inside the
   inside the array
   
   for example , if i want to grab the 
-  second element i should add 1:
+  second elemnet i put 1:
 let grades = [22, 43, 432];
 console.log([1]);
 

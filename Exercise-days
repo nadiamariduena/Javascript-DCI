@@ -73,22 +73,26 @@ console.log(exponent(3)); // -> 9
 // Over than 85 and less than 90 (A)
 // And over 90 print (A+)
 
-//REPEAT AGAIN
-let grade = 70;
+function grades() {
+  let grade = 70;
 
-if (grade >= 100) {
-  console.log("A+");
-} else if (grade >= 90) {
-  console.log("A");
-} else if (grade >= 85) {
-  console.log("B");
-} else if (grade >= 80) {
-  console.log("C");
-} else if (grade >= 75) {
-  console.log("D");
-} else {
-  console.log("F");
+  if (grade >= 100) {
+    console.log("A+");
+  } else if (grade >= 90) {
+    console.log("A");
+  } else if (grade >= 85) {
+    console.log("B");
+  } else if (grade >= 80) {
+    console.log("C");
+  } else if (grade >= 75) {
+    console.log("D");
+  } else {
+    console.log("F");
+  }
 }
+grades();
+
+//-----------------------------------------------------------------
 
 // Create a function that accepts the (user name, age, address and unlimited
 //number of activities the user enjoy doing)

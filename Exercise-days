@@ -98,3 +98,228 @@ time reading Russian literature.
 and...she likes to spend time at home reading or creating
 */
 
+
+
+
+//------------------------------EMAIL
+Validate Email. Create a function that takes a string,
+checks if it’s a valid email address, and then accordingly
+returns either true or false.
+The string must contain an “@” character.
+The string must contain a “.” character.
+The “@” must have at least one character in front of it.
+e.g. “john@example.com” is valid while “@example.com” is invalid.
+The “.” and the “@” must be in the appropriate places.
+e.g. “john.smith@com” is invalid while “john.smith@email.com” is valid.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Validation</title>
+
+    <style>
+
+      
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              background: #fff;
+              font-family: "Raleway-Thin", sans-serif;
+            }
+
+            body {
+              height: 100%;
+              overflow-x: hidden;
+              background: #fff;
+            }
+
+            #page {
+              display: flex;
+              flex-wrap: wrap;
+              background-color: aquamarine;
+              height: 100%;
+            }
+
+            #section {
+              width: 100vw;
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: #091a10;
+            }
+            #section h1 {
+              background-color: transparent;
+              -webkit-text-fill-color: transparent;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+      }
+
+    
+            #section p {
+              background-color: #091a10;
+              color: orangered;
+            }
+    </style>
+  </head>
+  <body>
+    <!------>
+    <div id="page">
+      <div id="section">
+        <h1
+     style="font-size:3em; color: orangered; margin: 20px 0 20px 0; background-color: transparent;">
+          Email validation
+        </h1>
+
+<!-----
+// the slashes  / \mean where the line will start and where it will end 
+// ^ how sign
+//$ should be added to the end, to justify the end of something
+//from 0 to 9 0-9
+//from [A-Za and also lowercase a to z.
+//_\-\.\ underscore period or dot are also allowed
+//{1,} it means: the previous mentioned frame must to be present for at least one character or more , it can be one 2 or 3 but cant be cero!...
+//...TRY the following in the document: type an email without the name of the email example: ....@email.com it wont work
+// escape \
+//\.$/; if i dont escape the period it s going to mean any character but  line,so i must to be careful where i put the escapes slashes
+// Here i shouldnt add nuber because theres no ending domaine names that end up with it ([A-Za-z])
+//{2,4} means that can be characters from 2 to 4 like dot.com dot.uk ...UK FR UIO but not more
+-->
+
+
+        <script type="text/javascript">
+
+        
+          function validate(form_id, email) {
+
+            //
+            var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+            var address = document.forms[form_id].elements[email].value;
+              //if the var address  is tested against the regular variable...
+
+              if (reg.test(address) == false)
+            //...and if the test results in a false statetement, then i want to make return false...
+            {
+              alert('Invalid Email Address. PLease enter a valid one');
+              document.forms[form_id].elements[email].focus(); //focus, is going to focus elements on backon...
+              //...to the email address bar, if the email had return false if not its going to be true and the form get submited.
+              //..and before that i want to alert the user what went wrong
+
+              return false;
+            }
+          }
+        </script>
+
+        <form
+          id="email_form"
+          style="background-color: transparent;"
+          method="get"
+          action="submit_successful.html"
+          onsubmit="javascript:return validate('email_form','email');">
+          <p style="  background-color: #091a10; color: orange;  font-family: "Cutive Mono", monospace;">
+            Enter E-mail Address Here:
+          </p>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            style="padding: 12px 40px; background-color: transparent; border-bottom: 1px dotted red; border-left: 0; border-right: 0; border-top: 0;"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            style="background-color:black; color:#fff; padding: 12px 20px; margin: 20px 0; border: 0;"
+          />
+        </form>
+        <!------>
+        <!------>
+      </div>
+    </div>
+    <!------>
+    <!------>
+  </body>
+</html>
+
+
+//------------------------------
+//----answer page
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Email validation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #fff;
+        font-family: "Raleway-Thin", sans-serif;
+      }
+
+      body {
+        height: 100%;
+        overflow-x: hidden;
+        background: #fff;
+      }
+
+      #page {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: aquamarine;
+        height: 100%;
+      }
+
+      #section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #091a10;
+      }
+      #section h1 {
+        background-color: transparent;
+        -webkit-text-fill-color: transparent;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+      }
+
+      #section p {
+        background-color: #091a10;
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div id="section">
+        <p style="font-size: 2em;">Email successfully submited!</p>
+        <p style="background-color: transparent; margin: 30px;">
+          <a
+            href="index.html"
+            style="background-color: transparent; text-decoration:line-through; font-size: 1.5em; color: teal;"
+            >Return to previous page</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+

@@ -59,30 +59,42 @@ grades();
 //number of activities the user enjoy doing)
 // * print all the user input adding the greeting part and more text turning
 //that input into a readable text.
-// * If one of his activities was dance ￼or party print "you are cool".
+// If one of his activities was dance ￼or party print "you are cool".
 
-function ludique() {
-  const firstName = "Mia";
-  const lastName = "Suaa";
-  const address = "185, rue Lecourbe";
-  const activity1 = "Chess";
-  const activity2 = "drawing";
-  const activity3 = "reading Russian literature";
-  const activity4 = "dance or party";
-  const text = `Hello my name is ${firstName} ${lastName}, i live in the ${address}. I love to play ${activity1} and ${activity2} but lately i just spend my time ${activity3}.`;
-  console.log(text);
+function fun(
+  firstName,
+  lastName,
+  address,
+  activity1,
+  activity2,
+  activity3,
+  ...activity4
+) {
+  console.log(
+    `Hello my name is ${firstName} ${lastName}, i live in the ${address}. 
+    I love to play ${activity1} and ${activity2} but lately i just spend my time ${activity3}.`
+  );
+
   if (firstName !== activity4) {
     console.log("and...she likes to spend time at home reading or creating");
   } else {
-    console.log("she loves la vida loca");
+    console.log("she is cool in another way");
   }
 }
+fun(
+  "Mia",
+  "Sua",
+  "185, rue Lecourbe",
+  "Chess",
+  "drawing",
+  "reading Russian literature",
+  "dance or party"
+);
 
-ludique();
-//RESULT
-/*
-Hello my name is Mia Suaa, i live in the 185, rue Lecourbe. I love to play 
-Chess and drawing but lately i just spend my time reading Russian literature.
+/*RESULT////
+Hello my name is Mia Sua, i live in the 185, rue Lecourbe. 
+I love to play Chess and drawing but lately i just spend my 
+time reading Russian literature.
 and...she likes to spend time at home reading or creating
-
 */
+

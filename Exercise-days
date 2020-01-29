@@ -61,7 +61,7 @@ grades();
 //that input into a readable text.
 // If one of his activities was dance ￼or party print "you are cool".
 
-function fun(
+function information(
   firstName,
   lastName,
   address,
@@ -81,7 +81,7 @@ function fun(
     console.log("she is cool in another way");
   }
 }
-fun(
+information(
   "Mia",
   "Sua",
   "185, rue Lecourbe",

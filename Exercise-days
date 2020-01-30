@@ -181,7 +181,7 @@ e.g. “john.smith@com” is invalid while “john.smith@email.com” is valid.
 
 <!-----
 // the slashes  / \mean where the line will start and where it will end 
-// ^ how sign
+// ^ how sign, serves to allow things depending of the position of it, example: /^([A-Za-z0-9_\-\.]... here it says that it allows the following characters, if it was inside it will mean the opposite
 //$ should be added to the end, to justify the end of something
 //from 0 to 9 0-9
 //from [A-Za and also lowercase a to z.

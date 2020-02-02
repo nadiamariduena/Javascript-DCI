@@ -34,7 +34,8 @@ function monthCheck(string) {
   let autumn = ["september", "october", "november"];
   //---------
 
-  //3 declare IF ELSE inside/FUNCTION------------
+  //BLOCK---3-------------------------------------
+  //declare IF ELSE inside/FUNCTION------------
   const currentSeason = monthToLook => {
     //var mother of this section
     let seasonName = "";

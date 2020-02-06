@@ -9,6 +9,7 @@ function arrSpliting(str) {
       
       for (let i = 0; i < word.length; i++) {
         if (word[i] === character) {
+      // IF word of i is equal to character, i++ increment 1
           count++;
         }
       }

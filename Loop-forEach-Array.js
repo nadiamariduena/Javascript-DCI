@@ -104,7 +104,49 @@ Retail
 Retail
 
 
-
-
 */
+//internet example------------------------------
+//Looping javascript object to print data
+//https://stackoverflow.com/questions/42373274/looping-javascript-object-to-print-data
 
+var $states = {
+  AL: {
+    longname: "Alabama",
+    lawOne: "Alabama Law 1",
+    lawTwo: "Alabama Law 2",
+    lawThree: "Alabama Law 3",
+    region: "Southeast"
+  },
+  AK: {
+    longname: "Alaska",
+    lawOne: "Alaska Law 1",
+    lawTwo: "Alaska Law 2",
+    lawThree: "Alaska Law 3",
+    region: "Northwest"
+  },
+  AZ: {
+    longname: "Arizona",
+    lawOne: "Arizona Law 1",
+    lawTwo: "Arizona Law 2",
+    lawThree: "Arizona Law 3",
+    region: "Southwest"
+  }
+};
+
+var result = {};
+Object.keys($states).forEach(function(key) {
+  if ($states[key]["region"] === "Southwest") {
+    result[key] = $states[key];
+  }
+});
+console.log(result);
+/*result
+{
+  AZ: {
+    longname: 'Arizona',
+    lawOne: 'Arizona Law 1',
+    lawTwo: 'Arizona Law 2',
+    lawThree: 'Arizona Law 3',
+    region: 'Southwest'
+  }
+}

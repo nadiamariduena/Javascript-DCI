@@ -267,6 +267,7 @@ Object.defineProperties(person, {
 });
 console.log(person.p3);
 console.log(Object.keys(person));
+// ---------------------------------------------------------------------------
 // Create a function that returns an array of properties of a javascript object.
 function arrSpliting(str) {
   let arr = str.split("");
@@ -286,12 +287,19 @@ function arrSpliting(str) {
   }
   return countObject;
 }
-//console.log(arrSpliting("هادي"));
+console.log(arrSpliting("hello beautiful cat"));
+
+
+// ---------------------------------------------------------------------------
+
 
 function countLetters(str) {
   let arr = str.split("");
   console.log(arr + "Chr Array ");
-  let result = {};
+  let result = 
+      
+      
+      
   function countOccurrences(string, letter) {
     let counter = 0;
     for (let i = 0; i < string.length; i++) {

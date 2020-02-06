@@ -2,7 +2,7 @@
 //In this example i am going to program the following to choose a
 //age over 21 that can drink, if i added 10 to the: if (ages[i] >= 10)
 //SO if i added 10, it s going to choose all the ages over 10 that exist inside the array
-// this below has to do with the next example
+
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 45, 25, 64, 32];
 

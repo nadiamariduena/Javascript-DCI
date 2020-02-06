@@ -57,7 +57,7 @@ companies.forEach(function(company, index, companies)
 
 */
 companies.forEach(function(company, index) {
-  console.log(company.category);
+  console.log(company);
 });
 
 /*RESULT
@@ -82,6 +82,26 @@ companies.forEach(function(company, index) {
 }
 { name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 }
 { name: 'Company ten', category: 'Retail', start: 1982, end: 1959 }
+
+
+*/
+
+//OR
+ //console.log(company.category);
+/*
+fffMosh lllHama
+Finance
+Retail
+Auto
+Retail
+Technology
+Finance
+Auto
+Technology
+Retail
+Retail
+
+
 
 
 */

@@ -52,7 +52,7 @@ const companies = [
   console.log(companies[i]);
 }*/
 /*The other way
-In the first line of the forEACH, i can add a also:
+In the first line of the forEACH, i can also add:
 companies.forEach(function(company, index, companies)
 
 */

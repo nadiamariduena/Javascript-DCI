@@ -34,6 +34,8 @@ circle.draw();
 function createCircle(radius) {
   //if the key and the value have the same name..
   //I can remove THE NOISE by simple adding RADIUS
+//check the vid: https://www.youtube.com/watch?v=PFmuCDHHpwk
+//min: 17:02
   return {
     radius,
     draw: function() {

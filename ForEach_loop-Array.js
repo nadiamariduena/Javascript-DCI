@@ -13,11 +13,11 @@ for (let i = 0; i < ages.length; i++) {
     canDrink.push(ages[i]);
   }
 }
-
-
-//--------------FOR EACH - LOOP - ETC
-
 console.log(canDrink);
+
+//--------------FOR EACH - LOOP - ETC-----------------------------------
+
+
 
 const companies = [
   { name: "Company One", category: "Finance", start: 1981, end: 2003 },

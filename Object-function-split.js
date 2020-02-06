@@ -21,3 +21,22 @@ function arrSpliting(str) {
     return countObject;
   }
   console.log(arrSpliting("hello beautiful cat"));
+/*RESULT
+
+{
+  h: 1,
+  e: 2,
+  l: 3,
+  o: 1,
+  ' ': 2,
+  b: 1,
+  a: 2,
+  u: 2,
+  t: 2,
+  i: 1,
+  f: 1,
+  c: 1
+}
+
+
+*/

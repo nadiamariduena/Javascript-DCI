@@ -41,7 +41,17 @@ const another = Object.assign({}, circle);
 
 console.log(another);
 /*
-  { ...circle }
+  { ...circle }----------------------------------------------------
+  
+  //BLOCK 1------------------
+  const circle = {
+  radius: 1,
+  drawing() {
+    console.log("everything counts");
+  }
+};
+----------------------------------------
+  
   Basically What this operator does "..." is
   that it takes all the objects and methods
    of the block one, and put it inside 

@@ -1,9 +1,3 @@
-//sort()...........act on a existing ARRAY
-//reduce()...........SPECIAL case, it could make a new array but also reduce the array into a single one
-//filter()...........MAKES A NEW ARRAY
-
-//fill()...........act on a existing ARRAY
-//map()...........MAKES A NEW ARRAY
 
 //-------------------------------------------------------
 //----------------------SORT-----------------------------
@@ -168,3 +162,20 @@ console.log(answer);
 let valor = [10, 4, 2, 1, 9];
 let answerr = valor.reduce((accumulator, val204) => accumulator + val204, 10); //the 10 argument will add 10* more to the content of the ARRAY, and the total will be 36
 console.log(answerr);
+
+
+
+//-------------------------------------------------------
+//-------------------------------------------------------
+//-------------------------------------------------------
+//-------------------------------------------------------
+//-------------------------------------------------------
+
+
+
+//sort()...........act on a existing ARRAY
+//reduce()...........SPECIAL case, it could make a new array but also reduce the array into a single one
+//filter()...........MAKES A NEW ARRAY
+
+//fill()...........act on a existing ARRAY
+//map()...........MAKES A NEW ARRAY

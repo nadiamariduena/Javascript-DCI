@@ -8,7 +8,8 @@
 let insecto = [6, 4, 8, 7];
 console.log(insecto);
 
-//Adding this two lines will sort the content of the ARRAY in a numerical order, from lowest to highest.
+//Adding this two lines will sort the content of the ARRAY in a numerical 
+//order, from lowest to highest.
 //IT DIDNT MAKE A NEW ARRAY it just sortet it.
 
 insecto.sort();
@@ -160,7 +161,8 @@ console.log(answer);
 // REDUCE THE CODE ABOVE  to 3 lines
 
 let valor = [10, 4, 2, 1, 9];
-let answerr = valor.reduce((accumulator, val204) => accumulator + val204, 10); //the 10 argument will add 10* more to the content of the ARRAY, and the total will be 36
+let answerr = valor.reduce((accumulator, val204) => accumulator + val204, 10); 
+//the 10 argument will add 10* more to the content of the ARRAY, and the total will be 36
 console.log(answerr);
 
 

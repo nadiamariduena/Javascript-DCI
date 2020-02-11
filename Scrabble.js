@@ -16,7 +16,7 @@ function score(arr) {
   let result = 0;
   for (let i = 0; i < arr.length; i++) {
     //arr.length ...arr stands for the parameter in the function.
-    result += scrabble[i].score; //important line += that will add the previous result while looping
+    result += scrabble[i].score; //important line += 
     //_+= this is going to remember the previous result while looping..check the notebook for further explanation.
     //_scrabble[i], with this i dont need to write 1,2,3 etc because [i] means it all.
   }

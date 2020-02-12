@@ -61,6 +61,9 @@ videoClash.stop = function() {
 
 videoClash.stop();
 videoClash.play();
+
+
+------///result/////------------
 {
   linear: 'a',
   play: [Function: play],

@@ -25,3 +25,26 @@ function score(arr) {
 
 //console plus call of the function
 console.log(score(scrabble));
+//--------------------------------------------
+
+
+
+let flute = [
+  { title: "do", output: 30 },
+  { title: "re", output: 50 },
+  { title: "mi", output: 40 },
+  { title: "fa", output: 20 },
+  { title: "so", output: 10 },
+  { title: "la", output: 30 },
+  { title: "si", output: 35 },
+  { title: "do", output: 39 }
+];
+
+function music(arr) {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    result += flute[i].output;
+  }
+  return result;
+}
+console.log(music(flute));

@@ -24,7 +24,41 @@ video.stop();
 //-------------------------------------
 //function -> GLOBAL (window, global)
 //--------------(2)--------------------
+//global
+/*
+const video = {
+  linear: "a",
+  play() {
+    console.log(this);
+  }
+};
 
+function playVideo() {
+  console.log(this);
+}
+
+playVideo();
+
+//result
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(util.promisify.custom)]: [Function (anonymous)]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(util.promisify.custom)]: [Function (anonymous)]
+  }
+}
+
+*/
+//-------------------------------------
+//function -> GLOBAL (window, global)
+//--------------(3)--------------------
 
 
 const video = {
